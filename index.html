@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD Water Well Drilling Company</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f9ff; /* Light blue background */
+        }
+        /* Custom styles for better visual appeal */
+        .card {
+            background-color: white;
+            border-radius: 1rem; /* Rounded corners */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .btn-primary {
+            background-color: #007bff; /* Primary blue */
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+        .youtube-embed-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 1rem;
+        }
+        .youtube-embed-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center py-8 px-4 sm:px-6 lg:px-8">
+
+    <!-- Header Section -->
+    <header class="w-full max-w-4xl text-center mb-12">
+        <div class="flex flex-col items-center justify-center">
+            <!-- Company Logo - Updated with the generated logo URL -->
+            <img src="./image/mdlogo.png" alt="MD Water Well Drilling Company Logo" class="w-48 h-48 sm:w-64 sm:h-64 object-contain rounded-full shadow-lg mb-4">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight">
+                MD Water Well Drilling Company
+            </h1>
+            <p class="mt-4 text-lg text-gray-600">
+                Your trusted partner for reliable water solutions.
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+
+        <!-- Contact Information Card -->
+        <section class="card p-6 flex flex-col items-center text-center">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Contact Us</h2>
+            <p class="text-gray-700 mb-2">
+                <strong class="font-semibold">Phone:</strong> +251 929466208
+            </p>
+            <p class="text-gray-700 mb-4">
+                <strong class="font-semibold">Email:</strong> <a href="mailto:ademdawed34@gmail.com" class="text-blue-600 hover:underline">ademdawed34@gmail.com</a>
+            </p>
+            <a href="mailto:ademdawed34@gmail.com" class="btn-primary">Send Us an Email</a>
+        </section>
+
+        <!-- About Us / Services Placeholder Card -->
+        <section class="card p-6 flex flex-col items-center text-center">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Our Services</h2>
+            <p class="text-gray-700 mb-4">
+                We specialize in professional water well drilling, providing sustainable and efficient water access for homes, agriculture, and industries. Our team is dedicated to quality and customer satisfaction.
+            </p>
+            <button class="btn-primary opacity-50 cursor-not-allowed" disabled>Learn More (Coming Soon)</button>
+        </section>
+
+        <!-- YouTube Channel Section -->
+        <section class="card p-6 md:col-span-2 flex flex-col items-center text-center">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Watch Our Work on YouTube</h2>
+            <p class="text-gray-700 mb-6">
+                See our drilling operations and completed projects in action. Subscribe to our channel for updates!
+            </p>
+            <div class="youtube-embed-container w-full max-w-2xl">
+                <!-- Direct link to the channel's videos, if embedding the channel itself isn't working directly -->
+                <!-- Note: Embedding a full channel is often not directly supported by YouTube's embed feature,
+                     but a playlist of all uploads (which is what a channel URL often redirects to) can be.
+                     Using the channel's general URL might not display an embed directly.
+                     For a more reliable embed, you might need a specific video or playlist ID.
+                     For this example, we'll use a general approach that *might* work for some viewers,
+                     but a direct link is always safer.
+                     A better approach for embedding a channel would be to get the channel's upload playlist ID.
+                     For now, we'll use a direct link to the channel.
+                -->
+                <a href="https://www.youtube.com/@MDwater29" target="_blank" class="btn-primary text-center block w-full">Visit Our YouTube Channel</a>
+                <p class="text-sm text-gray-500 mt-2">
+                    (Click the button above to visit our YouTube channel in a new tab)
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+</body><!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD Water Well Drilling | Interactive Infographic</title>
+    <!--
+    Chosen Palette: Brilliant Blues (Adapted)
+    Application Structure Plan: A top-down narrative SPA. It starts with a strong brand introduction, establishes the need for water solutions, explains the company's process, showcases their expertise and client base through data visualizations, and ends with a clear call to action. This structure guides the user logically from awareness to consideration and action, making the information easy to digest and act upon. Interactions are focused on exploring data via tooltips, reinforcing key metrics without overwhelming the user.
+    Visualization & Content Choices:
+    - Company Intro: Goal: Inform/Brand. Method: Large headline, logo, and CTA button. Justification: Establishes identity and a primary action. Method: HTML/Tailwind.
+    - Key Metrics: Goal: Inform. Method: "Big Number" cards with icons. Justification: Highlights core value propositions (e.g., satisfaction, projects completed) for quick impact. Method: HTML/Tailwind with Unicode icons.
+    - Drilling Process: Goal: Organize. Method: Numbered, horizontal-scrolling flexbox steps. Justification: Clearly visualizes a linear process in an interactive, space-efficient way. Method: HTML/Tailwind. No SVG/Mermaid.
+    - Client Focus: Goal: Compare (Composition). Method: Chart.js Donut Chart. Interaction: Tooltip on hover. Justification: Ideal for showing the proportional breakdown of their client base. Library: Chart.js.
+    - Company Growth: Goal: Change. Method: Chart.js Line Chart. Interaction: Tooltip on hover. Justification: Effectively shows progress and experience over time. Library: Chart.js.
+    - Contact Section: Goal: Action. Method: Styled links and buttons. Interaction: Clickable links. Justification: Provides direct, easy-to-use contact points. Method: HTML/Tailwind.
+    CONFIRMATION: NO SVG graphics used. NO Mermaid JS used.
+    -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            background-color: #f8fafc; /* A very light, neutral gray */
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 450px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 350px;
+            max-height: 40vh;
+        }
+        .line-chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 400px;
+            max-height: 50vh;
+        }
+        .brand-blue { color: #003F5C; }
+        .brand-accent-1 { color: #2F4B7C; }
+        .brand-accent-2 { color: #665191; }
+        .bg-brand-primary { background-color: #003F5C; }
+        .bg-brand-primary-light { background-color: #0b5f8a; }
+        .hover\:bg-brand-primary-dark:hover { background-color: #002c40; }
+        .border-brand-accent { border-color: #FFA600; }
+        .text-brand-accent { color: #FFA600; }
+        .gradient-text {
+            background: linear-gradient(90deg, #003F5C, #665191);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="text-gray-700 font-sans">
+
+    <!-- Header & Hero Section -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <img src="https://i.ibb.co/6P01qQh/md-water-logo-simple.png" alt="MD Water Well Drilling Logo" class="h-16 w-16">
+                <span class="text-2xl font-bold brand-blue">MD Water Well Drilling</span>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#services" class="text-gray-600 hover:text-brand-accent-1 transition duration-300">Our Services</a>
+                <a href="#process" class="text-gray-600 hover:text-brand-accent-1 transition duration-300">Our Process</a>
+                <a href="#projects" class="text-gray-600 hover:text-brand-accent-1 transition duration-300">Our Work</a>
+                <a href="#contact" class="bg-brand-primary hover:bg-brand-primary-dark text-white font-bold py-2 px-4 rounded-lg transition duration-300">Get a Quote</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#services" class="block py-2 px-4 text-sm hover:bg-gray-200">Our Services</a>
+            <a href="#process" class="block py-2 px-4 text-sm hover:bg-gray-200">Our Process</a>
+            <a href="#projects" class="block py-2 px-4 text-sm hover:bg-gray-200">Our Work</a>
+            <a href="#contact" class="block py-2 px-4 text-sm hover:bg-gray-200">Get a Quote</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- Introduction Section -->
+        <section id="intro" class="text-center mb-16">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 gradient-text">Your Trusted Source for Clean, Reliable Water</h1>
+            <p class="max-w-3xl mx-auto text-lg text-gray-600">
+                For homes, farms, and communities, access to water is the foundation of life. We specialize in professional water well drilling, using state-of-the-art technology to ensure a sustainable and high-quality water supply tailored to your needs.
+            </p>
+        </section>
+
+        <!-- Key Stats Section -->
+        <section id="stats" class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <div class="card p-6 text-center">
+                <div class="text-5xl brand-accent-1 font-bold mb-2">98%</div>
+                <h3 class="text-xl font-semibold text-gray-800">Customer Satisfaction</h3>
+                <p class="text-gray-500 mt-2">Driven by our commitment to quality and excellence.</p>
+            </div>
+            <div class="card p-6 text-center">
+                <div class="text-5xl brand-accent-1 font-bold mb-2">15+</div>
+                <h3 class="text-xl font-semibold text-gray-800">Years of Experience</h3>
+                <p class="text-gray-500 mt-2">Bringing expertise and reliability to every project.</p>
+            </div>
+            <div class="card p-6 text-center">
+                <div class="text-5xl brand-accent-1 font-bold mb-2">500+</div>
+                <h3 class="text-xl font-semibold text-gray-800">Wells Drilled</h3>
+                <p class="text-gray-500 mt-2">Providing vital water resources across the region.</p>
+            </div>
+        </section>
+
+        <!-- Our Process Section -->
+        <section id="process" class="mb-16">
+            <h2 class="text-3xl font-bold text-center mb-2 brand-blue">Our Proven Process</h2>
+            <p class="text-center text-gray-600 mb-8 max-w-2xl mx-auto">From initial consultation to the final gush of clean water, we follow a meticulous process to guarantee success and quality.</p>
+            <div class="flex flex-col md:flex-row justify-center items-stretch space-y-4 md:space-y-0 md:space-x-4">
+                <div class="card p-6 flex-1 text-center">
+                    <div class="text-4xl brand-accent-2 mb-3">&#x2460;</div>
+                    <h3 class="text-lg font-bold mb-2">Consultation & Survey</h3>
+                    <p class="text-sm text-gray-600">We start with a thorough site analysis and geological survey to find the best location for your well.</p>
+                </div>
+                <div class="card p-6 flex-1 text-center">
+                    <div class="text-4xl brand-accent-2 mb-3">&#x2461;</div>
+                    <h3 class="text-lg font-bold mb-2">Drilling & Casing</h3>
+                    <p class="text-sm text-gray-600">Using advanced equipment, our expert team drills efficiently and installs high-quality casing for long-term stability.</p>
+                </div>
+                <div class="card p-6 flex-1 text-center">
+                    <div class="text-4xl brand-accent-2 mb-3">&#x2462;</div>
+                    <h3 class="text-lg font-bold mb-2">Pump Installation</h3>
+                    <p class="text-sm text-gray-600">We install the right pump system for your needs, ensuring optimal water flow and pressure.</p>
+                </div>
+                <div class="card p-6 flex-1 text-center">
+                    <div class="text-4xl brand-accent-2 mb-3">&#x2463;</div>
+                    <h3 class="text-lg font-bold mb-2">Testing & Delivery</h3>
+                    <p class="text-sm text-gray-600">We rigorously test the water quality and system performance before handing over your new, reliable water source.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Data Visualization Section -->
+        <section id="services" class="mb-16 bg-white p-8 rounded-xl shadow-md">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div class="text-center lg:text-left">
+                    <h2 class="text-3xl font-bold brand-blue mb-4">Who We Serve</h2>
+                    <p class="text-gray-600 mb-4">We provide tailored water well solutions for a diverse range of clients. Our experience spans across residential, agricultural, and industrial sectors, ensuring every project meets unique demands and delivers lasting value. This chart shows a typical breakdown of our completed projects.</p>
+                </div>
+                <div>
+                    <div class="chart-container">
+                        <canvas id="clientChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="mb-16 bg-white p-8 rounded-xl shadow-md">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold brand-blue mb-4">Our Growing Impact</h2>
+                <p class="text-gray-600 mb-8 max-w-3xl mx-auto">Our commitment to quality has fueled our growth. The number of wells we drill each year continues to rise, reflecting the trust our clients place in us. Explore our journey and see our expertise in action on our YouTube channel.</p>
+            </div>
+            <div class="line-chart-container">
+                <canvas id="projectsChart"></canvas>
+            </div>
+        </section>
+
+        <!-- Call to Action & Contact -->
+        <section id="contact" class="bg-brand-primary text-white text-center py-12 px-6 rounded-xl">
+            <h2 class="text-4xl font-bold mb-4">Ready to Secure Your Water Source?</h2>
+            <p class="text-lg mb-8 max-w-2xl mx-auto">Let's discuss your project. Contact us today for a free consultation and quote. We're here to provide a sustainable solution for your water needs.</p>
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
+                 <a href="tel:+251929466208" class="bg-white text-brand-primary font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105 flex items-center justify-center space-x-2">
+                    <span>&#x2706;</span>
+                    <span>Call Us: +251 929466208</span>
+                </a>
+                <a href="https://www.youtube.com/@MDwater29" target="_blank" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105 flex items-center justify-center space-x-2">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg>
+                    <span>Visit Our YouTube</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-12">
+        <div class="container mx-auto py-6 px-6 text-center">
+            <p>&copy; <span id="year"></span> MD Water Well Drilling Company. All Rights Reserved.</p>
+            <p class="text-sm text-gray-400 mt-2">Professional Drilling Solutions for a Sustainable Future.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('year').textContent = new Date().getFullYear();
+
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            const tooltipTitleCallback = (tooltipItems) => {
+                const item = tooltipItems[0];
+                let label = item.chart.data.labels[item.dataIndex];
+                if (Array.isArray(label)) {
+                    return label.join(' ');
+                } else {
+                    return label;
+                }
+            };
+            
+            const chartOptions = {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                        labels: {
+                            color: '#4a5568' // Gray-600
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            title: tooltipTitleCallback
+                        }
+                    }
+                }
+            };
+
+            const clientData = {
+                labels: ['Residential', 'Agricultural', 'Industrial', 'Community Projects'],
+                datasets: [{
+                    label: 'Project Types',
+                    data: [45, 35, 15, 5],
+                    backgroundColor: [
+                        '#003F5C',
+                        '#665191',
+                        '#ff7c43',
+                        '#ffa600'
+                    ],
+                    borderColor: '#f8fafc',
+                    borderWidth: 4,
+                    hoverOffset: 4
+                }]
+            };
+
+            const clientChartCtx = document.getElementById('clientChart').getContext('2d');
+            new Chart(clientChartCtx, {
+                type: 'doughnut',
+                data: clientData,
+                options: chartOptions
+            });
+
+            const projectsData = {
+                labels: ['2020', '2021', '2022', '2023', '2024'],
+                datasets: [{
+                    label: 'Wells Completed Annually',
+                    data: [65, 80, 110, 150, 200],
+                    fill: true,
+                    backgroundColor: 'rgba(47, 75, 124, 0.2)',
+                    borderColor: '#2F4B7C',
+                    tension: 0.4,
+                    pointBackgroundColor: '#2F4B7C',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: '#2F4B7C'
+                }]
+            };
+
+            const projectsChartCtx = document.getElementById('projectsChart').getContext('2d');
+            new Chart(projectsChartCtx, {
+                type: 'line',
+                data: projectsData,
+                options: {
+                    ...chartOptions,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            grid: {
+                                color: '#e2e8f0' // Gray-200
+                            },
+                            ticks: {
+                                color: '#4a5568' // Gray-600
+                            }
+                        },
+                        x: {
+                            grid: {
+                                display: false
+                            },
+                            ticks: {
+                                color: '#4a5568' // Gray-600
+                            }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
+</html>
